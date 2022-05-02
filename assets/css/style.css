@@ -1,0 +1,58 @@
+/* Style Frontend Mentor */
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/* Style Desktop Header */
+.containerHeader {
+    padding: 2em;
+}
+
+.containerHeaderNav {
+    display: flex;
+}
+
+.navbarBrand {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.containerHeaderLinks {
+    display: flex;
+}
+
+.containerHeaderUl {
+    display: flex;
+}
+
+.navbarIcons {
+    display: none;
+}
+
+/* Style Desktop Main */
+.containerMain {
+    display: flex;
+}
+
+.containerMainText {
+    width: 50%;
+}
+
+.containerMainImg {
+    background-image: url("../images/image-hero-desktop.png");
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    height: 700px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Style Desktop Footer */
+
+@media screen and (max-width:375px) {
+    /* Style Mobile Header */
+    .containerMainImg {
+        background-image: url("../images/image-hero-mobile.png");
+    }
+}
