@@ -2,57 +2,169 @@
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
+/* Style General */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fafafa;
+}
+
 /* Style Desktop Header */
 .containerHeader {
     padding: 2em;
+    vertical-align: middle;
 }
 
 .containerHeaderNav {
     display: flex;
+    align-items: center;
 }
 
 .navbarBrand {
     font-size: 2em;
     font-weight: bold;
+    margin-right: 2em;
 }
 
 .containerHeaderLinks {
     display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    color: #7f7f7f;
+    font-weight: bold;
 }
 
-.containerHeaderUl {
+.containerHeaderUl1 {
     display: flex;
 }
 
-.navbarIcons {
+.containerHeaderUl1 li {
+    margin-right: 2em;
+}
+
+.containerHeaderUl2 {
+    display: flex;
+    align-items: center;
+}
+
+.containerHeaderUl2 li {
+    margin-left: 2em;
+}
+
+.containerHeaderUl2 li:nth-child(1) {
+    margin-right: 2em;
+}
+
+.buttonRegister {
+    border: 2px solid #7f7f7f;
+    padding: 1em 2em;
+    border-radius: 15px;
+}
+
+.burgerIcons {
     display: none;
 }
 
 /* Style Desktop Main */
 .containerMain {
+    margin-left: 8%;
+    margin-right: 8%;
     display: flex;
+    padding-top: 3em;
 }
 
 .containerMainText {
-    width: 50%;
+    width: 60%;
+    padding-right: 2em;
+    padding-top: 3;
+}
+
+.titleH1 {
+    font-size: 5em;
+    font-weight: bold;
 }
 
 .containerMainImg {
     background-image: url("../images/image-hero-desktop.png");
     margin: 0;
     padding: 0;
-    width: 50%;
-    height: 700px;
+    width: 40%;
+    height: 800px;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 }
 
 /* Style Desktop Footer */
 
 @media screen and (max-width:375px) {
     /* Style Mobile Header */
+    .containerHeader {
+        padding: 1em;
+        vertical-align: middle;
+    }
+
+    .containerHeaderNav {
+        align-items: flex-start;
+    }
+
+    .containerHeaderNav a.burgerIcons {
+        display: block;
+        position: absolute;
+        top: 1.5rem;
+        right: 1rem;
+    }
+
+    .containerHeaderLinks {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 4rem;
+        right: 0.5em;
+        width: 15rem;
+        background-color: white;
+        padding-top: 1em;
+    }
+
+    .containerHeaderUl1 {
+        flex-direction: column;
+        text-align: left;
+        margin-left: 0;
+    }
+
+    .containerHeaderUl1 li {
+        margin-top: 1em;
+    }
+
+    .containerHeaderUl2 {
+        flex-direction: column;
+        align-content: center;
+    }
+
+    .containerHeaderUl2 li {
+        margin-top: 1em;
+    }
+
+    /* Style Mobile Main */
+    .containerMain {
+        margin: 0;
+        display: flex;
+        flex-direction: column-reverse;
+        padding-top: 0;
+    }
+
+    .containerMainText {
+        width: 100%;
+        padding: 0;
+    }
+
+    .brH1 {
+        display: none;
+    }
+
     .containerMainImg {
         background-image: url("../images/image-hero-mobile.png");
+        width: 100%;
+        height: 300px;
     }
 }
