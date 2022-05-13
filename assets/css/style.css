@@ -8,6 +8,7 @@ body {
     background-color: #fafafa;
 }
 
+/* STYLE DESKTOP */
 /* Style Desktop Header */
 .containerHeader {
     padding: 2em;
@@ -97,6 +98,8 @@ body {
 
 /* Style Desktop Footer */
 
+
+/* STYLE MOBILE */
 @media screen and (max-width:375px) {
     /* Style Mobile Header */
     .containerHeader {
@@ -104,8 +107,21 @@ body {
         vertical-align: middle;
     }
 
+    .containerHeaderLinks {
+    display: flex;
+    width: 100%;
+    justify-content: start;
+    align-items: center;
+    color: #7f7f7f;
+    font-weight: bold;
+}
+
     .containerHeaderNav {
         align-items: flex-start;
+    }
+
+    .burgerIcons {
+        display: none;
     }
 
     .containerHeaderNav a.burgerIcons {
@@ -116,12 +132,13 @@ body {
     }
 
     .containerHeaderLinks {
-        display: flex;
+        display: none;
         flex-direction: column;
-        position: absolute;
-        top: 4rem;
-        right: 0.5em;
-        width: 15rem;
+        position: fixed;
+        top: 0rem;
+        right: 0rem;
+        width: 65%;
+        height: 100%;
         background-color: white;
         padding-top: 1em;
     }
@@ -129,7 +146,9 @@ body {
     .containerHeaderUl1 {
         flex-direction: column;
         text-align: left;
+        width: 80%;
         margin-left: 0;
+        margin-top: 3rem;
     }
 
     .containerHeaderUl1 li {
@@ -137,12 +156,26 @@ body {
     }
 
     .containerHeaderUl2 {
+        width: 100%;
         flex-direction: column;
-        align-content: center;
+
+        margin-top: 2rem;
+        padding: 0;
     }
 
     .containerHeaderUl2 li {
         margin-top: 1em;
+        margin-left: 0;
+    }
+
+    .containerHeaderUl2 li:nth-child(1) {
+        margin-right: 0em;
+    }
+
+    .buttonRegister {
+        padding: 1em 3em;
+        margin: 0;
+        border-radius: 15px;
     }
 
     /* Style Mobile Main */
