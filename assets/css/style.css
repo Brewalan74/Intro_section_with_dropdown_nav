@@ -39,6 +39,14 @@ body {
     display: flex;
 }
 
+.featuresLinks {
+    display: none;
+    width: auto;
+    flex-direction: column;
+    position: fixed;
+    padding-top: 2rem;
+}
+
 .containerHeaderUl1 li {
     margin-right: 2em;
 }
