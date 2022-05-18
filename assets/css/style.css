@@ -43,12 +43,29 @@ body {
     display: none;
     width: auto;
     flex-direction: column;
-    position: fixed;
-    padding-top: 2rem;
+    position: absolute;
+    top: 5em;
+}
+
+li.featuresLi {
+    margin-bottom: 0.5em;
 }
 
 .containerHeaderUl1 li {
     margin-right: 2em;
+}
+
+.companyLinks {
+    display: none;
+    width: auto;
+    flex-direction: column;
+    position: absolute;
+    top: 5em;
+    left: 18em;
+}
+
+li.companyLi {
+    margin-bottom: 0.5em;
 }
 
 .containerHeaderUl2 {
@@ -87,10 +104,11 @@ body {
     width: 60%;
     height: 50em;
     padding-right: 2em;
-    padding-top: 3;
+    padding-top: 3em;
 }
 
 .titleH1 {
+    margin-top: 1em;
     font-size: 5rem;
     font-weight: bold;
 }
@@ -106,7 +124,7 @@ body {
     padding: 0;
     width: 40%;
     height: 50em;
-    background-position: center;
+    background-position: top;
     background-repeat: no-repeat;
     background-size: contain;
 }
@@ -149,6 +167,10 @@ body {
         margin-left: 1em;
     }
 
+    .titleH1 {
+        font-size: 3.5rem;
+    }
+
     .containerMainImg {
         height: 30em;
         background-position: top;
@@ -157,6 +179,7 @@ body {
 
 /* STYLE MEDIUM */
 @media screen and (max-width:768px) {
+    /* Style medium header */
     .containerHeader {
         padding: 1em;
         vertical-align: middle;
@@ -210,6 +233,12 @@ body {
         margin-top: 1em;
     }
 
+    .featuresLinks {
+        position: relative;
+        top: 0;
+        left: 1em;
+    }
+
     .containerHeaderUl2 {
         width: 100%;
         flex-direction: column;
@@ -227,23 +256,41 @@ body {
         margin-right: 0em;
     }
 
+    .companyLinks {
+        position: relative;
+        top: 0;
+        left: 1em;
+    }
+
     .buttonRegister {
         padding: 1em 3em;
         margin: 0;
         border-radius: 15px;
     }
 
+    /* Style medium main */
     .containerMainText {
         height: 20em;
     }
     
     .titleH1 {
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
     
     .containerMainImg {
         height: 20em;
         background-position: top;
+    }
+}
+
+/* STYLE SMALL */
+@media screen and (max-width:576px) {
+    .titleH1 {
+        font-size: 2rem;
+    }
+
+    .paraMain {
+        font-size: 0.8em;
     }
 }
 
@@ -273,7 +320,7 @@ body {
     }
 
     .containerHeaderNav a.burgerIcons {
-        display: block;
+        display: inline-block;
         position: absolute;
         top: 1.5rem;
         right: 1rem;
@@ -303,10 +350,15 @@ body {
         margin-top: 1em;
     }
 
+    .featuresLinks {
+        position: relative;
+        top: 0;
+        left: 1em;
+    }
+
     .containerHeaderUl2 {
         width: 100%;
         flex-direction: column;
-
         margin-top: 2rem;
         padding: 0;
     }
@@ -320,6 +372,12 @@ body {
         margin-right: 0em;
     }
 
+    .companyLinks {
+        position: relative;
+        top: 0;
+        left: 1em;
+    }
+
     .buttonRegister {
         padding: 1em 3em;
         margin: 0;
@@ -331,7 +389,7 @@ body {
         margin: 0;
         display: flex;
         flex-direction: column-reverse;
-        padding-top: 0;
+        padding-top: 2em;
     }
 
     .containerMainText {

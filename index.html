@@ -26,25 +26,23 @@
       <a class="navbarBrand" href="#">snap</a>
       <div class="containerHeaderLinks">
         <ul class="containerHeaderUl1">
-          <li><a href="#" onclick="featuresToggle()">Features</a> <span class="arrowFeatures">&#9660;</span></li>
+          <li><a href="#" onclick="toggleFeatures()">Features</a> <span class="arrowFeatures">&#9660;</span></li>
           <div class="featuresLinks">
             <ul>
-              <li><a href="#">Todo List</a></li>
-              <li><a href="#">Calendar</a></li>
-              <li><a href="#">Reminders</a></li>
-              <li><a href="#">Planning</a></li>
+              <li class="featuresLi"><a href="#"><img class="dropImg" src="./assets/images/icon-todo.svg" alt=""> Todo List</a></li>
+              <li class="featuresLi"><a href="#"><img class="dropImg" src="./assets/images/icon-calendar.svg" alt=""> Calendar</a></li>
+              <li class="featuresLi"><a href="#"><img class="dropImg" src="./assets/images/icon-reminders.svg" alt=""> Reminders</a></li>
+              <li class="featuresLi"><a href="#"><img class="dropImg" src="./assets/images/icon-planning.svg" alt=""> Planning</a></li>
             </ul>
           </div>
-          <li><a href="#">Company</a> <span class="arrowCompany">&#9660;</span></li>
-          <div class="CompanyLinks">
+          <li><a href="#" onclick="toggleCompany()">Company</a> <span class="arrowCompany">&#9660;</span></li>
+          <div class="companyLinks">
             <ul>
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
+              <li class="companyLi"><a href="#">History</a></li>
+              <li class="companyLi"><a href="#">Our Team</a></li>
+              <li class="companyLi"><a href="#">Blog</a></li>
             </ul>
           </div>
-          <a href="javascript:void(0);" class="companyDropdown" onclick="toggleCompany()"></a>
           <li><a href="#">Careers</a></li>
           <li><a href="#">About</a></li>
         </ul>
