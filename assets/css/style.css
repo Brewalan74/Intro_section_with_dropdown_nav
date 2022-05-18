@@ -76,21 +76,28 @@ body {
 
 /* Style Desktop Main */
 .containerMain {
-    margin-left: 8%;
-    margin-right: 8%;
+    width: 100%;
+    padding-left: 8%;
+    padding-right: 8%;
     display: flex;
     padding-top: 3em;
 }
 
 .containerMainText {
     width: 60%;
+    height: 50em;
     padding-right: 2em;
     padding-top: 3;
 }
 
 .titleH1 {
-    font-size: 5em;
+    font-size: 5rem;
     font-weight: bold;
+}
+
+.paraMain {
+    margin-top: 2em;
+    margin-bottom: 2em;
 }
 
 .containerMainImg {
@@ -98,7 +105,7 @@ body {
     margin: 0;
     padding: 0;
     width: 40%;
-    height: 800px;
+    height: 50em;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -106,6 +113,139 @@ body {
 
 /* Style Desktop Footer */
 
+
+/* STYLE EXTRA LARGE */
+@media screen and (max-width:1200px) {
+    /* Style extra large main */
+    .containerMainText {
+        height: 30em;
+        padding-right: 2em;
+        padding-top: 3;
+    }
+    
+    .titleH1 {
+        font-size: 4rem;
+        font-weight: bold;
+    }
+    
+    .containerMainImg {
+        height: 30em;
+        background-position: top;
+    }
+}
+
+/* STYLE LARGE */
+@media screen and (max-width:992px) {
+    /* Style large header */
+    .navbarBrand {
+        margin-right: 1em;
+    }
+
+    .containerHeaderUl1 li {
+        margin-right: 1em;
+    }
+
+    .containerHeaderUl2 li {
+        margin-left: 1em;
+    }
+
+    .containerMainImg {
+        height: 30em;
+        background-position: top;
+    }
+}
+
+/* STYLE MEDIUM */
+@media screen and (max-width:768px) {
+    .containerHeader {
+        padding: 1em;
+        vertical-align: middle;
+    }
+
+    .containerHeaderLinks {
+    display: flex;
+    width: 100%;
+    justify-content: start;
+    align-items: center;
+    color: #7f7f7f;
+    font-weight: bold;
+}
+
+    .containerHeaderNav {
+        align-items: flex-start;
+    }
+
+    .burgerIcons {
+        display: none;
+    }
+
+    .containerHeaderNav a.burgerIcons {
+        display: block;
+        position: absolute;
+        top: 1.5rem;
+        right: 1rem;
+    }
+
+    .containerHeaderLinks {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 0rem;
+        right: 0rem;
+        width: 65%;
+        height: 100%;
+        background-color: white;
+        padding-top: 1em;
+    }
+
+    .containerHeaderUl1 {
+        flex-direction: column;
+        text-align: left;
+        width: 80%;
+        margin-left: 0;
+        margin-top: 3rem;
+    }
+
+    .containerHeaderUl1 li {
+        margin-top: 1em;
+    }
+
+    .containerHeaderUl2 {
+        width: 100%;
+        flex-direction: column;
+
+        margin-top: 2rem;
+        padding: 0;
+    }
+
+    .containerHeaderUl2 li {
+        margin-top: 1em;
+        margin-left: 0;
+    }
+
+    .containerHeaderUl2 li:nth-child(1) {
+        margin-right: 0em;
+    }
+
+    .buttonRegister {
+        padding: 1em 3em;
+        margin: 0;
+        border-radius: 15px;
+    }
+
+    .containerMainText {
+        height: 20em;
+    }
+    
+    .titleH1 {
+        font-size: 3rem;
+    }
+    
+    .containerMainImg {
+        height: 20em;
+        background-position: top;
+    }
+}
 
 /* STYLE MOBILE */
 @media screen and (max-width:375px) {
