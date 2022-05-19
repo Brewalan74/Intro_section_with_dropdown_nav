@@ -104,7 +104,7 @@ li.companyLi {
     width: 60%;
     height: 50em;
     padding-right: 2em;
-    padding-top: 3em;
+    padding-top: 1em;
 }
 
 .titleH1 {
@@ -114,8 +114,28 @@ li.companyLi {
 }
 
 .paraMain {
-    margin-top: 2em;
-    margin-bottom: 2em;
+    margin-top: 3em;
+    margin-bottom: 3em;
+    padding-right: 8em;
+    font-size: 1.5em;
+}
+
+.buttonLearnMore {
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 1em 1.5em;
+    border: 1px solid black;
+    border-radius: 12.5px;
+    background-color: black;
+}
+
+.logoClient {
+    margin-top: 5em;
+}
+
+.logoClientImg {
+    margin-right: 2em;
 }
 
 .containerMainImg {
@@ -130,24 +150,45 @@ li.companyLi {
 }
 
 /* Style Desktop Footer */
-
+.footerAttribution {
+    margin-top: 2em;
+}
 
 /* STYLE EXTRA LARGE */
 @media screen and (max-width:1200px) {
     /* Style extra large main */
     .containerMainText {
-        height: 30em;
+        height: 35em;
         padding-right: 2em;
-        padding-top: 3;
+        padding-top: 1em;
     }
     
     .titleH1 {
         font-size: 4rem;
         font-weight: bold;
     }
+
+    .paraMain {
+        margin-top: 2.5em;
+        margin-bottom: 2.5em;
+        padding-right: 8em;
+        font-size: 1.2em;
+    }
+
+    .buttonLearnMore {
+        font-size: 1.1em;
+    }
+
+    .logoClient {
+        margin-top: 4em;
+    }
+    
+    .logoClientImg {
+        margin-right: 1.5em;
+    }
     
     .containerMainImg {
-        height: 30em;
+        height: 35em;
         background-position: top;
     }
 }
@@ -166,9 +207,33 @@ li.companyLi {
     .containerHeaderUl2 li {
         margin-left: 1em;
     }
-
+    /* Style Large Main */
+    .containerMainText {
+        height: 30em;
+        padding-right: 2em;
+        padding-top: 1em;
+    }
     .titleH1 {
         font-size: 3.5rem;
+    }
+
+    .paraMain {
+        margin-top: 2em;
+        margin-bottom: 2em;
+        padding-right: 8em;
+        font-size: 1em;
+    }
+
+    .buttonLearnMore {
+        font-size: 1em;
+    }
+
+    .logoClient {
+        margin-top: 3.5em;
+    }
+    
+    .logoClientImg{
+        margin-right: 1em;
     }
 
     .containerMainImg {
@@ -270,27 +335,68 @@ li.companyLi {
 
     /* Style medium main */
     .containerMainText {
-        height: 20em;
+        height: 25em;
+        padding-top: 1.5em;
     }
     
     .titleH1 {
         font-size: 2.5rem;
     }
+
+    .paraMain {
+        margin-top: 1em;
+        margin-bottom: 1em;
+        padding-right: 5em;
+        font-size: 1em;
+    }
+
+    .buttonLearnMore {
+        font-size: 0.8em;
+        padding: 0.8em 1.2em;
+    }
+
+    .logoClient {
+        margin-top: 2.5em;
+    }
+    
+    .logoClientImg {
+        margin-right: 1em;
+        width: 4em;
+    }
     
     .containerMainImg {
-        height: 20em;
+        height: 25em;
         background-position: top;
     }
 }
 
 /* STYLE SMALL */
 @media screen and (max-width:576px) {
+    .containerMainText {
+        height: 20em;
+        padding-top: 1em;
+    }
+
     .titleH1 {
         font-size: 2rem;
     }
 
     .paraMain {
         font-size: 0.8em;
+    }
+
+    .logoClient {
+        margin-top: 1.5em;
+    }
+    
+    .logoClientImg {
+        margin-right: 0.5em;
+        width: 3em;
+    }
+
+    .containerMainImg {
+        height: 20em;
+        background-position: top;
     }
 }
 
@@ -401,9 +507,46 @@ li.companyLi {
         display: none;
     }
 
+    .titleH1 {
+        margin-top: 0;
+        font-size: 2rem;
+        font-weight: bolder;
+        text-align: center;
+    }
+    
+    .paraMain {
+        margin: 1.2em 0.5em;
+        padding: 0;
+        font-size: 1em;
+        text-align: center;
+    }
+    
+    .buttonLearnMore {
+        font-size: 1em;
+        margin: auto;
+        padding: 1em 1.5em;
+        border: 1px solid black;
+        border-radius: 12.5px;
+        background-color: black;
+    }
+    .buttonCenter {
+        text-align: center;
+    }
+
+    .logoClient {
+        margin-top: 3em;
+    }
+    
+    .logoClientImg {
+        margin-right: 0.5em;
+        margin-left: 0.5em;
+        width: 3.5em;
+    }
+
     .containerMainImg {
         background-image: url("../images/image-hero-mobile.png");
         width: 100%;
         height: 300px;
     }
+
 }
